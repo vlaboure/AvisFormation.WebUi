@@ -14,7 +14,7 @@ namespace AvisFormation.WebUi
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-             name: "detailformatioln",
+             name: "detailformation",
              url: "formation/{nomSeo}",
              defaults: new { controller = "Formation", action = "DetailsFormation" }
            );
@@ -30,7 +30,7 @@ namespace AvisFormation.WebUi
               url: "toutes-les-formations",
               defaults: new { controller = "Formation", action = "ToutesLesFormations" }
             );
-
+      
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

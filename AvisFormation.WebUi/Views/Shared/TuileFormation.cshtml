@@ -9,9 +9,13 @@
         {
             <div>Aucun avis </div>
         }
-        else if (Model.Note > 0)
+        else
         {
-            <span class="glyphicon glyphicon-star yellow"></span>
+            for (int i = 1; i <= Model.Note; i++)
+            {
+                <span class="glyphicon glyphicon-star yellow"></span>
+            }
+            @*<span class="glyphicon glyphicon-star yellow"></span>
             if (Model.Note > 1)
             {
                 <span class="glyphicon glyphicon-star yellow"></span>
@@ -27,7 +31,7 @@
             if (Model.Note > 4)
             {
                 <span class="glyphicon glyphicon-star yellow"></span>
-            }
+            }*@
             <span>@Model.Note / 5 </span>
         }
     </div>

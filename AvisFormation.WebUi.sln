@@ -9,7 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisFormation.Data", "AvisF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisFormation.Logic", "AvisFormation.Logic\AvisFormation.Logic.csproj", "{1CE2FFD5-232F-4A6D-9D31-045710CDA7D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvisFormations.Data", "AvisFormations.Data\AvisFormations.Data.csproj", "{98C68160-77DA-4131-B35A-3A7997D9A6F8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9790FC00-8192-4368-AEC7-96CBE721FF3A}"
+	ProjectSection(SolutionItems) = preProject
+		SqlQuery_1.sql = SqlQuery_1.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +32,6 @@ Global
 		{1CE2FFD5-232F-4A6D-9D31-045710CDA7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE2FFD5-232F-4A6D-9D31-045710CDA7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE2FFD5-232F-4A6D-9D31-045710CDA7D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98C68160-77DA-4131-B35A-3A7997D9A6F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98C68160-77DA-4131-B35A-3A7997D9A6F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98C68160-77DA-4131-B35A-3A7997D9A6F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98C68160-77DA-4131-B35A-3A7997D9A6F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -28,15 +28,15 @@
                 else
                 {
                     <div class="row">
-                        <span class="col-md-2 sm-4">Nom du stagiaire : </span>
-                        <span class="col-md-2 sm-4">@avis.Nom</span>
+                        <span class="col-md-2 sm-3">Nom du stagiaire : </span>
+                        <span class="col-md-2 sm-3">@avis.Nom</span>
                     @*</div>
                     <div class="row">*@
-                        <span class="col-md-2 sm-3">Description : </span>
-                        <span class="col-md-2 sm-3">@avis.Description</span>         
-                        <span class="col-md-2 sm-3">Note : </span>
+                        <span class="col-md-1 sm-3">Description : </span>
+                        <span class="col-md-3 sm-3">@avis.Description</span>         
+                        <span class="col-md-1 sm-3">Note : </span>
 
-                        <span class="col-md-2 sm-3">
+                        <span class="col-md-3 sm-9">
                             @for (int i = 1; i <= avis.Note; i++)
                             {
                                 <span class="glyphicon glyphicon-star yellow"></span>

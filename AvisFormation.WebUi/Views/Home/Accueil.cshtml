@@ -10,45 +10,8 @@
 <div class="container">
 
     @foreach(var dto in Model.ListFormations)
-    {
-        <article class="info-block col-md-3 col-sm-6">
-            <h4>
-                @Html.ActionLink(dto.Formation.Nom,"DetailsFormation","Formation",new {nomSeo=dto.Formation.NomSeo },new {@class="lien-formation" })
-            </h4>
-            <p>
-                @if (dto.Note == 0)
-                {
-                    <span>Aucun Avis</span>
-                }
-                else
-                {
-                    for (int i = 1; i <= dto.Note; i++)
-                    {
-                        <span class="glyphicon glyphicon-star yellow"></span>
-                    }
-                    @*<span class="glyphicon glyphicon-star yellow"></span>
-                    if (dto.Note > 1)
-                    {
-                        <span class="glyphicon glyphicon-star yellow"></span>
-                    }
-                    if (dto.Note > 2)
-                    {
-                        <span class="glyphicon glyphicon-star yellow"></span>
-                    }
-                    if (dto.Note > 3)
-                    {
-                        <span class="glyphicon glyphicon-star yellow"></span>
-                    }
-                    if (dto.Note > 4)
-                    {
-                        <span class="glyphicon glyphicon-star yellow"></span>
-                    }*@
-
-                    <span>@dto.Note / 5</span>
-                }
-            </p>
-            <p>@dto.Formation.Description</p>
-        </article>
+    {   ///apel de la vue partielle d'affichage des formations   
+        @Html.Partial("TuileFormation", dto)
     }
 </div>
 

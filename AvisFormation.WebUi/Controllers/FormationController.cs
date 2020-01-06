@@ -14,6 +14,7 @@ namespace AvisFormation.WebUi.Controllers
         public ActionResult ToutesLesFormations()
         {
             var vm = new AccueilViewModel();
+            //using -->variable de contexte détruite après utilisation
             using (var context = new AvisEntities())
             {
                 var listFormation = context.Formation.OrderBy(x => Guid.NewGuid()).ToList();
