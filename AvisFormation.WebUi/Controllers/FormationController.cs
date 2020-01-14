@@ -10,6 +10,7 @@ namespace AvisFormation.WebUi.Controllers
 {
     public class FormationController : Controller
     {
+        
         // GET: Formation
         public ActionResult ToutesLesFormations()
         {
